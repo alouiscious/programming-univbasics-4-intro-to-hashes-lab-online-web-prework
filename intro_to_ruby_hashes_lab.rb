@@ -44,15 +44,17 @@ end
 
 def update_counting_hash(hash, key)
   # given a hash and a key as parameters, return an updated hash
-  counting_hash = ()
+  hash = {
+    key
+  }
   # if the provided key is not present in the hash,
   # add it and assign it to the value of 1
-  if counting_hash.include?(:key) != false
-    counting_hash(:key) = 1
+  if hash[key].include? != false
+    hash[key] = 1
   end
   # if the provided key is present, increment its value by 1
-  if counting_hash.include?(:key)
-    counting_hash(:key) += 1
+  if hash[key].include?(:key)
+    hash[key] += 1
   end
 
 end
